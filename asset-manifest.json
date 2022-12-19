@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/safarni/static/css/main.6f87c6bb.css",
-    "main.js": "/safarni/static/js/main.92d33de7.js",
+    "main.css": "/safarni/static/css/main.fff0bfe2.css",
+    "main.js": "/safarni/static/js/main.37f9051e.js",
     "static/media/axios.cjs": "/safarni/static/media/axios.cbe1b8033b90ae4c8151.cjs",
     "index.html": "/safarni/index.html",
-    "main.6f87c6bb.css.map": "/safarni/static/css/main.6f87c6bb.css.map",
-    "main.92d33de7.js.map": "/safarni/static/js/main.92d33de7.js.map"
+    "main.fff0bfe2.css.map": "/safarni/static/css/main.fff0bfe2.css.map",
+    "main.37f9051e.js.map": "/safarni/static/js/main.37f9051e.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f87c6bb.css",
-    "static/js/main.92d33de7.js"
+    "static/css/main.fff0bfe2.css",
+    "static/js/main.37f9051e.js"
   ]
 }
