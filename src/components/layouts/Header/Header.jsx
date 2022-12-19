@@ -51,10 +51,12 @@ export default ({ data = [] }) => {
           onClick={() => actions.toogleSidebar()}
         >
           <Button
-            after="&#xf0c9;"
             type="solid-white-tb"
             hoverType="solid-gray-tb"
-          />
+
+          >
+          <i class="fa-solid fa-bars bars" style={{fontSize:'24px'}}></i>
+          </Button>
         </div>
       </div>
     </Layout>

@@ -196,3 +196,14 @@
     display: none;
   }
 }
+.btn_mobile a{
+  background: transparent !important;
+  border: none !important;
+  
+}
+.btn_mobile i {
+  color: #26735b;
+}
+.sticky .btn_mobile i{
+  color: white;
+}
