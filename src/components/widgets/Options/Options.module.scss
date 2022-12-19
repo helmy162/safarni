@@ -1,0 +1,55 @@
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+
+  }
+  .nav_menu input[type=radio]
+  {
+  display : none;
+  }
+  .nav_menu label
+  {
+    flex: 1 1 0;
+    min-width: 120px;
+}
+  .nav_menu span 
+  {
+width: 100%;
+  display       : inline-block;
+  border-radius: 30px;
+  border: solid 2px #1a4c3c;
+  background-color: #fff;
+  padding: 5px 0px;
+  font-family: Lexend;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1a4c3c;
+  
+  }
+  .nav_menu span:hover
+  {
+  background-color : #e6e6e6;
+  }
+  .nav_menu input[type=radio]:checked + span
+  {
+  background-color: #26735b;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  }

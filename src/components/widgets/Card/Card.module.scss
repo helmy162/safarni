@@ -1,0 +1,109 @@
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-basis: 100%;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px ;
+  border-radius: 10px;
+  border: solid 2px #0d261e;
+  background-color: #fff;
+  color: #000;
+}
+.card img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+.card > div{
+  justify-content: space-between;
+}
+.card > div > div { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.card > div > div > * {
+  margin: 0px;
+}
+.card h1{
+  flex-grow: 0;
+  font-family: Lexend;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.card h2{
+  font-family: Lexend;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin: 0px;
+}
+.card h3 {
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000;
+}
+
+.btnlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btnlist button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #1a4c3c;
+  border: none;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: none;
+}
+
+@media (max-width: 768px) {
+  .card > div{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hotel_info {
+    gap:20px
+  }
+  .card img{
+    border-radius: 10px 10px 0px 0px ;
+  }
+}

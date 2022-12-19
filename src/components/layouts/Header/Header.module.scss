@@ -1,0 +1,198 @@
+.accountbtn, .accountbtn2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #26735b;
+  color: #fff;
+  font-family: Lexend;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+}
+.accountbtn2{
+  font-family: 'Font Awesome 6 Free';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.wrapper {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 69px 0px 0px 0px;
+}
+
+.sticky {
+  background: #26735b;
+  position: fixed;
+  top: 0;
+}
+.sticky .header{
+  margin: 0px;
+  border: none !important;
+}
+.sticky .accountbtn, .sticky .accountbtn2{
+  background-color: #fff;
+  color: #26735b;
+}
+
+.hidden {
+  position: fixed;
+  top: -100%;
+}
+.sticky .menu{
+  & > li {
+    & > a,
+    & span > a {
+      color: #fff;
+    }
+    & > a:hover{
+      color: darkgray !important;
+    }
+  }
+}
+.menu {
+  display: flex;
+
+  & > li {
+    position: relative;
+
+    & > a,
+    & span > a {
+      display: block;
+      color: #000;
+      font-size: 1.3rem;
+      line-height: 1.4;
+      padding: 20px 2rem;
+      transition: all 0.3s ease;
+      font-family: Lexend;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+    }
+
+    & > span > a:after {
+      content: "\f107";
+      font-family: "Line Awesome Free";
+      font-weight: 700;
+      margin-left: 7px;
+    }
+
+    &:hover ul {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: visible;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 25rem;
+      background-color: #fff;
+      box-shadow: 0 0.2rem 0.8rem rgba(40, 40, 50, 0.1);
+
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(50px);
+      transition: all 0.5s ease;
+
+      & li:not(:last-of-type) {
+        border-bottom: 1px solid #ddd;
+      }
+
+      & a {
+        color: #000;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        display: block;
+        padding: 2rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #ddd;
+        }
+      }
+    }
+  }
+}
+
+.btn{
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  background: transparent;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  font-size: 22px;
+  border-radius: 50%;
+}
+
+.btn_desktop{
+  display: flex;
+  gap: 20px;
+}
+
+.btn_mobile {
+  display: none;
+  padding: 0 0;
+}
+.accountbtn2{
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+  }
+
+  .btn_desktop {
+    display: none;
+  }
+
+  .btn_mobile {
+    display: flex;
+  }
+  .accountbtn2{
+    display: flex;
+  }
+  .accountbtn{
+    display: none;
+  }
+}

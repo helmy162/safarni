@@ -1,0 +1,133 @@
+.filters_section{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  gap: 15px;
+  & h1 {
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+  & h2{
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    margin-bottom: 15px;
+  }
+}
+
+.filter label {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Lexend;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+/* Hide the browser's default checkbox */
+.filter label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.filter span {
+
+  height: 22.5px;
+  width: 22.5px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.filter label:hover input ~  span {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.filter label input:checked ~ span {
+  background-color: #26735b;
+  border: none;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.filter span:after {
+  content: "";
+  // position: absolute;
+  display: none;
+  margin: auto;
+}
+
+/* Show the checkmark when checked */
+.filter label input:checked ~  span:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter label span:after {
+  left: 9px;
+  top: 115px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .filters_section{
+    flex-basis: 100%;
+  }
+  .filter h2{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .filter{
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+  }
+}
