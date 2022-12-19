@@ -24,9 +24,9 @@ export default () => {
         <Sidebar data={state.data.menu} />
         <Header data={state.data.menu} />
         <Routes>  
-          <Route path="/home" exact element={<Home/>} />
+          <Route path="/" exact element={<Home/>} />
           <Route path="/search" exact element={<Search/>} />
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </Fragment>
