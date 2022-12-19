@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/safarni/static/css/main.6f87c6bb.css",
+    "main.js": "/safarni/static/js/main.95df9cd9.js",
+    "static/media/axios.cjs": "/safarni/static/media/axios.cbe1b8033b90ae4c8151.cjs",
+    "index.html": "/safarni/index.html",
+    "main.6f87c6bb.css.map": "/safarni/static/css/main.6f87c6bb.css.map",
+    "main.95df9cd9.js.map": "/safarni/static/js/main.95df9cd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f87c6bb.css",
+    "static/js/main.95df9cd9.js"
+  ]
+}
